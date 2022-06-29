@@ -1,7 +1,7 @@
 # Site settings
 title: mrrootsec:~# # site title
 description: >- # site description
-  Blah Blah,meet him <a href="https://github.com/mrrootsec" target="_blank" rel="noopener">@github</a>.
+  Application Security Blog
 lang: en-US # default lang
 timezone: Asia/Kolkata # set your timezone
 image: assets/img/Mrroot.png # This image used for Open Graph more info https://ogp.me/
