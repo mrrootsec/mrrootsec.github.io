@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>mrrootsec</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body><br>
+  <div class="container-fluid hero mb-4">
+    <div class="row">
+      <div class="col-md-16 text-center">
+        <h3>My AppSec Journey: Tools and Techniques I've Learned</h3><br>
+        <div class="d-flex justify-content-center">
+          <a href="resources.html" class="btn btn-primary btn-shadow me-5"><i class="fas fa-book"></i> resources</a>
+          <a href="about.html" class="btn btn-primary btn-shadow"><i class="fas fa-user"></i> about</a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col">
+      </div>
+      <div class="col-10">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8">
+              <div class="ms-3"><h4>Latest Articles</h4></div>
+            </div>
+            <div class="col-md-4">
+              <div class="d-flex align-items-end justify-content-end">
+                <select id="tagFilter" class="form-select-sm">
+                    <option value="all">Filter ...</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <ul class="list-group list-group-item-secondary">
+            <li class="list-group-item border-0"> <a href="https://null.community/event_sessions/4096-wonders-of-http-headers" target="_blank" rel="noopener noreferrer">Wonders of HTTP Headers - Null Hyderabad</a><br>
+              <span class="text-muted"><i class="fa-regular fa-calendar-check"></i> January 20, 2024</span>
+              <span class="tags d-block mt-2"><i class="fa-solid fa-tags"></i> <span class="tag">app-sec, bug-bounty</span></span>
+            </li>
+            <li class="list-group-item border-0"> <a href="https://medium.com/@mrrootsec/burpsuite-custom-scan-profiles-12a9df9e36bd" target="_blank" rel="noopener noreferrer">Burpsuite Custom Scan Profiles</a><br>
+              <span class="text-muted"><i class="fa-regular fa-calendar-check"></i> November 27, 2023</span>
+              <span class="tags d-block mt-2"><i class="fa-solid fa-tags"></i> <span class="tag">app-sec</span></span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col">
+      </div>
+
+    </div>
+  <div class="container text-white footer">
+      <div class="row">
+        <div class="col text-center">
+          <p class="mb-0">&copy; mrrootsec</p>
+        </div>
+      </div>
+  </div>
+  </div>  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  <script>
+    function uY(){let e=['app-sec','bug-bounty','code-review'];return e}function IY(){let e=uY();let t=document.getElementById('tagFilter');e.forEach(function(e){let o=document.createElement('option');o.value=e.toLowerCase();o.textContent=e;t.appendChild(o)})}function Yr(){let e=document.getElementById('tagFilter').value;let t=document.querySelectorAll('.list-group-item');t.forEach(function(t){let o=t.querySelectorAll('.tag');let n=false;o.forEach(function(t){let o=t.textContent.toLowerCase();if(e==='all'||o.includes(e.toLowerCase())){n=true}});if(n){t.style.display='block'}else{t.style.display='none'}})}IY();document.getElementById('tagFilter').addEventListener('change',Yr);
+  </script>
+</body>
+</html>

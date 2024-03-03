@@ -1,0 +1,266 @@
+/* Global styles */
+body {
+  background-color: #263440;
+  color: #e9f7ff;
+  padding: 10px; /* Add padding for better spacing on smaller screens */
+}
+
+/* Hero section styles */
+.hero {
+  height: 20vh; /* Adjust height for smaller screens */
+}
+
+.hero h1,
+.hero p,
+.hero a {
+  color: #fff; /* Set text color for hero heading and paragraph */
+  font-size: 15px;
+}
+
+/* Blog posts section styles */
+.blog-posts h2 {
+  color: #fff; /* Set text color for blog post headings */
+  font-size: 1.5rem; /* Decrease font size for better readability on smaller screens */
+}
+
+/* Card styles */
+.card {
+  background-color: #273949;
+  color: #e9f7ff;
+}
+
+/* Button styles */
+.btn-primary,
+.btn-outline-primary {
+  background-color: #38a3a5;
+  border-color: #38a3a5;
+  color: #e9f7ff;
+  font-size: 0.8rem; /* Decrease font size for better fit on smaller screens */
+  padding: 5px 10px; /* Adjust padding for smaller screens */
+}
+
+.btn-primary:hover,
+.btn-outline-primary:hover {
+  background-color: #2980b9;
+  border-color: #2980b9;
+}
+
+.btn-outline-primary {
+  color: #38a3a5;
+}
+
+.btn-outline-primary:hover {
+  color: #fff;
+}
+
+/* Form select styles */
+.form-select-sm {
+  background-color: inherit;
+  background-color: #263340;
+  color: inherit;
+  border: 1px solid #50af2a;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+/* List group styles */
+.list-group {
+  background-color: inherit;
+}
+
+.list-group:hover {
+  cursor: pointer;
+}
+
+.list-group-item a {
+  color: inherit;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.list-group a:focus,
+.list-group a:hover {
+  color: #71ff5e !important;
+}
+
+/* Resources Card-specific styles */
+.border-green {
+  border-left: 3px solid rgb(67, 240, 67);
+}
+
+.card-body:focus, .card-body:hover {
+  color: important;
+}
+
+.card svg {
+  transition: transform 0.5s ease;
+}
+
+.card:hover svg {
+  transform: scale(1.1);
+}
+
+/* Additional styles */
+.list-group-item {
+  background-color: inherit;
+  color: white;
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 0 0 rgba(50, 247, 50, 0.7);
+  }
+  50% {
+    box-shadow: 0 0 20px 5px rgba(100, 235, 47, 0.7);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(49, 243, 65, 0.7);
+  }
+}
+
+.btn-shadow:hover {
+  animation: glow 1s alternate;
+}
+
+.modal-content,
+.modal-body {
+  background-color: #263440;
+  border: 1px solid #263440;
+  color: white;
+}
+
+.modal-header,
+.btn-close {
+  color: rgb(255, 255, 255);
+}
+
+/* Code block styles */
+code {
+  font-family: Ubuntu;
+  color: crimson;
+  background-color: #f1f1f1;
+  padding: 2px;
+  font-size: 105%;
+}
+
+/* Footer styles */
+.footer {
+  background-color: inherit;
+  color: inherit;
+  position: absolute;
+  margin-left: 10px;
+  margin-top: 10px;
+  bottom: 10px;
+  width: 100%;
+}
+
+.connect {
+  color: rgb(143, 240, 143);
+}
+
+/* Wrapper */
+.icon-button {
+  background-color: inherit;
+  border-radius: 2.6rem;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.3rem;
+  height: 2.6rem;
+  line-height: 2.6rem;
+  margin: 0 5px;
+  position: relative;
+  text-align: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 2.6rem;
+}
+
+/* Circle */
+.icon-button span {
+  border-radius: 0;
+  display: block;
+  height: 0;
+  left: 50%;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  width: 0;
+}
+
+.icon-button:hover span {
+  width: 2.6rem;
+  height: 2.6rem;
+  border-radius: 2.6rem;
+  margin: -1.3rem;
+}
+
+/* Icons */
+.icon-button i {
+  background: none;
+  color: white;
+  height: 2.6rem;
+  left: 0;
+  line-height: 2.6rem;
+  position: absolute;
+  top: 0;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  width: 2.6rem;
+  z-index: 10;
+}
+
+/* Social Media Icons */
+.twitter span {
+  background-color: #4099ff;
+}
+
+.linkedin span {
+  background-color: #3B5998;
+}
+
+.github span {
+  background-color: #0077b5;
+}
+
+.mail span {
+  background-color: #f4423b;
+}
+
+/* Social Media Icons Hover */
+.icon-button:hover .icon-twitter,
+.icon-button:hover .icon-linkedin,
+.icon-button:hover .fa-github,
+.icon-button:hover .fa-mail {
+  color: white;
+}
+
+/* Responsive styles */
+@media all and (max-width: 680px) {
+  .hero {
+    height: 15vh; /* Further decrease height for smaller screens */
+  }
+
+  .btn-primary,
+  .btn-outline-primary {
+    font-size: 0.7rem; /* Further decrease font size for better fit on smaller screens */
+    padding: 3px 8px; /* Further adjust padding for smaller screens */
+  }
+
+  /* Hide Pinterest icon on small screens */
+  .pinterest {
+    display: none; 
+  }
+
+  /* Additional styles for small screens */
+  body {
+    padding: 5px; /* Further decrease padding for smaller screens */
+  }
+}
